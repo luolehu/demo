@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!-- 打印日志：log4j-1.2.17.jar是mybatis而不是spirng的 -->
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{dd/MM/yy hh:mm:ss:sss z}] %5p %c{2}: %m%n" />
+		</layout>
+	</appender>
+
+	<logger name="Java.sql">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="com.ibatis">
+		<level value="DEBUG" />
+	</logger>
+
+	<!-- 打印mybatis日志  -->
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</root> 
+</log4j:configuration>
