@@ -38,7 +38,7 @@
         <jedis.version>2.7.2</jedis.version>
         <solrj.version>4.10.3</solrj.version>
         <shrio-redis.version>2.4.2.1-RELEASE</shrio-redis.version>
-        <shiro.version>1.2.3</shiro.version>
+        <shiro.version>1.8.0</shiro.version>
         <lucene.version>4.4.0</lucene.version>
         <freemarker-version>2.3.23</freemarker-version>
     </properties>
